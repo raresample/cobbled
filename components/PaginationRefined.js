@@ -12,7 +12,7 @@ const PaginationRefined = ({totalProducts, productsPerPage, setCurrentPage, curr
   }
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center pb-8">
       {pages.map((page, index) => {
         return (
           <button

@@ -141,7 +141,7 @@ export default function Footer() {
           </div>
         </div>
         <div id="company-links" className="flex md:flex-row lg:justify-end md:justify-center flex-col items-center lg:pt-0 pt-4 text-sm">
-          <p className="text-white font-bold"><Link href="https://github.com/raresample/cobbled" target="_blank">Aaron Hope</Link> &copy;2023</p>
+          <p className="text-white font-bold"><Link href="https://github.com/raresample/cobbled" target="_blank">Aaron Hope &copy;2023</Link></p>
           <Link href="/" className="text-gray-200 md:mx-4">Terms & Conditions</Link>
           <Link href="/" className="text-gray-200">Privacy Policy</Link>
         </div>

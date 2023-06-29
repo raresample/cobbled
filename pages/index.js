@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 
 import PaginationRefined from "@/components/PaginationRefined";
@@ -29,11 +30,11 @@ export default function Home() {
   const currentProducts = dataResponse.slice(firstPostIndex, lastPostIndex);
 
   return (
-    <main className={`pt-16 pb-8 bg-slate-100 ${inter.className}`}>
+    <main className={`pt-16 bg-slate-100 ${inter.className}`}>
       <Navbar />
 
       {/* grid experiment */}
-      <section className="mx-12 mb-8 flex justify-center">
+      <section className="lg:mx-16 sm:mx-8 mx-4 mb-8 flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2 mt-8">
           
           {currentProducts.map((product) => {
@@ -67,6 +68,7 @@ export default function Home() {
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
       />
+      <Footer />
     </main>
   )
 }
