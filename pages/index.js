@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
 import Navbar from "@/components/Navbar";
+import Pagination from "@/components/Pagination";
 import Footer from "@/components/Footer";
+
 import Image from "next/image";
 
-import PaginationRefined from "@/components/PaginationRefined";
 
 import { Inter } from 'next/font/google'
 
@@ -62,7 +63,7 @@ export default function Home() {
           })}
         </div>        
       </section>
-      <PaginationRefined
+      <Pagination
         totalProducts={dataResponse.length}
         productsPerPage={productsPerPage}
         setCurrentPage={setCurrentPage}
