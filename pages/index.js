@@ -33,9 +33,7 @@ export default function Home() {
   return (
     <main className={`pt-16 bg-slate-100 ${inter.className}`}>
       <Navbar />
-
-      {/* grid experiment */}
-      <section className="lg:mx-16 sm:mx-8 mx-4 mb-8 flex justify-center">
+      <div className="lg:mx-16 sm:mx-8 mx-4 mb-8 flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2 mt-8">
           
           {currentProducts.map((product) => {
@@ -62,7 +60,7 @@ export default function Home() {
             );
           })}
         </div>        
-      </section>
+      </div>
       <Pagination
         totalProducts={dataResponse.length}
         productsPerPage={productsPerPage}
