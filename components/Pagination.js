@@ -13,8 +13,9 @@ const Pagination = ({totalProducts, productsPerPage, setCurrentPage, currentPage
   
 return (
   <div className="flex justify-center pb-8">
+    {/* previous page button */}
     <button
-      className={`mx-1 bg-gray-700 text-white font-bold py-2 px-4 xs:py-1 xs:px-2 ${
+      className={`mx-1 bg-gray-700 text-white font-bold px-2 py-1 xs:px-4 xs:py-2 ${
         currentPage === 1 ? 'bg-gray-950 cursor-default' : 'hover:bg-cyan-700'
       }`}
       onClick={() => {
@@ -26,6 +27,7 @@ return (
     >
       {"<"}
     </button>
+    {/* page number buttons */}
     {pages.map((page, index) => {
       if (
         (page <= 4 && currentPage <= 3) ||
@@ -53,7 +55,7 @@ return (
       ) {
         return (
           <button
-            className={`mx-1 bg-gray-700 text-white font-bold py-2 px-4 xs:py-1 xs:px-2 ${
+            className={`mx-1 bg-gray-700 text-white font-bold px-2 py-1 xs:px-4 xs:py-2 ${
               page === currentPage
                 ? "bg-gray-950 cursor-default"
                 : "hover:bg-cyan-700"
@@ -80,8 +82,9 @@ return (
         );
       }
     })}
+    {/* next page button */}
     <button
-      className={`mx-1 bg-gray-700 text-white font-bold py-2 px-4 xs:py-1 xs:px-2 ${
+      className={`mx-1 bg-gray-700 text-white font-bold px-2 py-1 xs:px-4 xs:py-2 ${
         currentPage === pages.length ? 'bg-gray-950 cursor-default' : 'hover:bg-cyan-700'
       }`}
       onClick={() => {
