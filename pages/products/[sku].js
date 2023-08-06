@@ -47,7 +47,24 @@ export default function Home() {
           <div className="mb-2 border-2 px-4 pt-2 pb-4">
             <div className="flex items-center justify-between">
               <span>
-                <img src="https://assets.solesense.com/images/logos/retailers/flight-club.svg" alt="" className="w-16 mb-4 mr-4 pt-4 first-line:inline" />
+                <img src="https://assets.solesense.com/site/images/logos/retailers/flight-club.svg" alt="" className="w-16 mb-4 mr-4 pt-4 first-line:inline" />
+              </span>
+              <span className="sm:text-xl text-lg">
+                {
+                  (dataResponse.price) && <h2 className="sm:text-2xl">${parseInt(dataResponse.price)+2}</h2>
+                }
+              </span>
+              <span>
+                <h2 className="sm:text-2xl"><a href={`${dataResponse.URL}`} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl text-md px-3 py-2 mr-2 mb-2 dark:bg-black dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-blue-800" target="_blank">Buy</a></h2>
+              </span>            
+            </div>
+            <div className="text-sm">Flight Club</div>
+            <div className="text-xs">Last checked 3 days ago</div>
+          </div>
+          <div className="mb-2 border-2 px-4 pt-2 pb-4">
+            <div className="flex items-center justify-between">
+              <span>
+                <img src="https://assets.solesense.com/site/images/logos/retailers/goat.svg" alt="" className="w-16 mb-4 mr-4 pt-4 first-line:inline" />
               </span>
               <span className="sm:text-xl text-lg">
                 {
@@ -58,59 +75,42 @@ export default function Home() {
                 <h2 className="sm:text-2xl"><a href={`${dataResponse.URL}`} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl text-md px-3 py-2 mr-2 mb-2 dark:bg-black dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-blue-800" target="_blank">Buy</a></h2>
               </span>            
             </div>
-            <div className="text-sm">Flight Club</div>
+            <div className="text-sm">Goat</div>
             <div className="text-xs">Last checked 2 days ago</div>
           </div>
           <div className="mb-2 border-2 px-4 pt-2 pb-4">
             <div className="flex items-center justify-between">
               <span>
-                <img src="https://assets.solesense.com/images/logos/retailers/flight-club.svg" alt="" className="w-16 mb-4 mr-4 pt-4 first-line:inline" />
+                <img src="https://assets.solesense.com/site/images/logos/retailers/stockx.svg" alt="" className="w-16 mb-4 mr-4 pt-4 first-line:inline" />
               </span>
               <span className="sm:text-xl text-lg">
                 {
-                  (dataResponse.price) && <h2 className="sm:text-2xl">${dataResponse.price}</h2>
+                  (dataResponse.price) && <h2 className="sm:text-2xl">${parseInt(dataResponse.price)+6}</h2>
                 }
               </span>
               <span>
                 <h2 className="sm:text-2xl"><a href={`${dataResponse.URL}`} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl text-md px-3 py-2 mr-2 mb-2 dark:bg-black dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-blue-800" target="_blank">Buy</a></h2>
               </span>            
             </div>
-            <div className="text-sm">Flight Club</div>
-            <div className="text-xs">Last checked 2 days ago</div>
+            <div className="text-sm">StockX</div>
+            <div className="text-xs">Last checked yesterday</div>
           </div>
           <div className="mb-2 border-2 px-4 pt-2 pb-4">
             <div className="flex items-center justify-between">
               <span>
-                <img src="https://assets.solesense.com/images/logos/retailers/flight-club.svg" alt="" className="w-16 mb-4 mr-4 pt-4 first-line:inline" />
+                <img src="https://assets.solesense.com/site/images/logos/retailers/klekt.svg" alt="" className="w-16 mb-4 mr-4 pt-4 first-line:inline" />
               </span>
               <span className="sm:text-xl text-lg">
                 {
-                  (dataResponse.price) && <h2 className="sm:text-2xl">${dataResponse.price}</h2>
+                  (dataResponse.price) && <h2 className="sm:text-2xl">${parseInt(dataResponse.price)-7}</h2>
                 }
               </span>
               <span>
                 <h2 className="sm:text-2xl"><a href={`${dataResponse.URL}`} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl text-md px-3 py-2 mr-2 mb-2 dark:bg-black dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-blue-800" target="_blank">Buy</a></h2>
               </span>            
             </div>
-            <div className="text-sm">Flight Club</div>
-            <div className="text-xs">Last checked 2 days ago</div>
-          </div>
-          <div className="mb-2 border-2 px-4 pt-2 pb-4">
-            <div className="flex items-center justify-between">
-              <span>
-                <img src="https://assets.solesense.com/images/logos/retailers/flight-club.svg" alt="" className="w-16 mb-4 mr-4 pt-4 first-line:inline" />
-              </span>
-              <span className="sm:text-xl text-lg">
-                {
-                  (dataResponse.price) && <h2 className="sm:text-2xl">${dataResponse.price}</h2>
-                }
-              </span>
-              <span>
-                <h2 className="sm:text-2xl"><a href={`${dataResponse.URL}`} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl text-md px-3 py-2 mr-2 mb-2 dark:bg-black dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-blue-800" target="_blank">Buy</a></h2>
-              </span>            
-            </div>
-            <div className="text-sm">Flight Club</div>
-            <div className="text-xs">Last checked 2 days ago</div>
+            <div className="text-sm">Klekt</div>
+            <div className="text-xs">Last checked 5 hours ago</div>
           </div>
         </div>
       </div>

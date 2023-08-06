@@ -46,15 +46,29 @@ export default function Home() {
                       src={`${product.PICTUREURL}`}
                       alt="product" />
                   </div>
-                  <div className="px-6 py-4 grid grid-cols-3">
-                    <h4 className="mb-1 text-xl font-semibold tracking-tight text-gray-800 col-span-2">{product.NAME}</h4>
-                    <div>
+                  <div className="px-6 pt-4">
+                    <h4 className="mb-1 text-xl font-semibold tracking-tight text-gray-800">{product.NAME}</h4>
+                    {/* <div>
+                      <span className="flex justify-end -mb-1 text-gray-500 text-sm">Starting at</span>
                       {
-                        (product.price) && <h5 className="flex justify-end pt-1">${product.price}</h5>
+                        (product.price) && <h5 className="flex justify-end">${parseInt(product.price)-7}</h5>
+                      }
+                    </div> */}
+                  </div>
+                  <div className="flex justify-between px-6 pb-4">
+                    <div>
+                      <span className="flex -mb-1 text-gray-500 text-sm">Starting at</span>
+                      {
+                        (product.price) && <h5 className="">${parseInt(product.price)-7}</h5>
                       }
                     </div>
-                    {/* <p className="leading-normal text-gray-700">We could put a brief product description here.</p> */}
+                    <div>
+                      {
+                        (product.gender) && <h5 className="capitalize">{product.gender}</h5>
+                      }
+                    </div>
                   </div>
+                  
                 </a>
               </div></>
             );
